@@ -1,5 +1,7 @@
 # m920q-dual-NVME
 
+![Lenovo M920Q](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/20180508_lenovo_tiny.jpg)
+
 Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q Tiny by soldering missing SMD component to the board.
 
 Models overview:
@@ -72,3 +74,11 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Rezistor | 0402 | 10 Kohm | - | 2 |
 | Rezistor | 0402 | 33 ohm | - | 1 |
 | M.2 NVME | - | - | - | 1 |
+
+### Components location - TOP side of the board
+
+9 components on the Left side of SATA port, highlighted in green:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5877_x.png)
+
+12 components on the Right side of SATA port, highlighted in green:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5878_x.png)
