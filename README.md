@@ -61,7 +61,8 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Rezistor | R639 | 0402 | 0 ohm | - | 1 |
 | Rezistor | RC27 | 0402 | 10 Kohm | - | 1 |
 | Rezistor | RC24 | 0402 | 10 Kohm | - | 1 |
-| M.2 NVME | - | - | - | - | 1 |
+| M.2 NVME connector | - | - | - | - | 1 |
+| M.2 NVME spacer | - | - | - | - | 1 |
 
 * ### Components list summary:
 | Type | Size | Value | Voltage | Count |
@@ -73,7 +74,8 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Rezistor | 0402 | 0 ohm | - | 8 |
 | Rezistor | 0402 | 10 Kohm | - | 2 |
 | Rezistor | 0402 | 33 ohm | - | 1 |
-| M.2 NVME | - | - | - | 1 |
+| M.2 NVME connector | - | - | - | 1 |
+| M.2 NVME spacer | - | - | - | 1 |
 
 ### Components location - TOP side of the board
 
