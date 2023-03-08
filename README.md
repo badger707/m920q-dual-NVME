@@ -29,9 +29,46 @@ Few components are on the bottom side of the board where NVME slot is located.
 Looking at schematics for 2nd NVME drive circuit - 16 capacitors and 11 resistors needs to be soldered on board, together with M.2 NVME connector.
 By comparing my visual findings with schematics and "board view", I was able to locate & identify all of them.
 
+* ### Components list
+| Type | Name | Size | Value | Voltage | Count |
+|-----------|--------|-------|--------|----------|---|
+| Capacitor | C363 | 0402 | 0.01uF | 25V7-K | 1 |
+| Capacitor | C364 | 0402 | 0.01uF | 25V7-K | 1 |
+| Capacitor | C365 | 0402 | 0.1uF | 16V7-K | 1 |
+| Capacitor | C366 | 0603 | 10uF | 6.3V6-M | 1 |
+| Capacitor | C367 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C368 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C369 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C370 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C371 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C372 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C373 | 0402 | 0.22uF | 16V7-K | 1 |
+| Capacitor | C374 | 0402 | 0.22uF | 16V7-K | 1 |
+| Rezistor | R1302 | 0402 | 0 ohm | - | 1 |
+| Rezistor | R1303 | 0402 | 0 ohm | - | 1 |
+| Rezistor | R631 | 0402 | 0 ohm | - | 1 |
+| Rezistor | R632 | 0402 | 0 ohm | - | 1 |
+| Rezistor | R633 | 0402 | 33 ohm | - | 1 |
+| Rezistor | R634 | 0402 | 0 ohm | - | 1 |
+| Rezistor | R635 | 0402 | 0 ohm | - | 1 |
+| Rezistor | R636 | 0402 | 0 ohm | - | 1 |
+| Capacitor | C377 | 0402 | 0.01uF | 25V7-K | 1 |
+| Capacitor | C378 | 0402 | 0.01uF | 25V7-K | 1 |
+| Capacitor | C379 | 0402 | 0.1uF | 16V7-K | 1 |
+| Capacitor | C380 | 0603 | 10uF | 6.3V6-M | 1 |
+| Rezistor | R639 | 0402 | 0 ohm | - | 1 |
+| Rezistor | RC27 | 0402 | 10 Kohm | - | 1 |
+| Rezistor | RC24 | 0402 | 10 Kohm | - | 1 |
+| M.2 NVME | - | - | - | - | 1 |
 
-
-
-
-
-
+* ### Components list summary:
+| Type | Size | Value | Voltage | Count |
+|-----------|-------|--------|----------|---|
+| Capacitor | 0402 | 0.01uF | 25V7-K | 4 |
+| Capacitor | 0402 | 0.1uF | 16V7-K | 2 |
+| Capacitor | 0402 | 0.22uF | 25V7-K | 8 |
+| Capacitor | 0603 | 10uF | 6.3V6-M | 2 |
+| Rezistor | 0402 | 0 ohm | - | 8 |
+| Rezistor | 0402 | 10 Kohm | - | 2 |
+| Rezistor | 0402 | 33 ohm | - | 1 |
+| M.2 NVME | - | - | - | 1 |
