@@ -53,7 +53,7 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Rezistor | R633 | 0402 | 33 ohm | - | top |
 | Rezistor | R634 | 0402 | 0 ohm | - | top |
 | Rezistor | R635 | 0402 | 0 ohm | - | top |
-| Rezistor | R636 | 0402 | 0 ohm | - | top |
+| Rezistor | R637 | 0402 | 0 ohm | - | top |
 | Capacitor | C377 | 0402 | 0.01uF | 25V7-K | top |
 | Capacitor | C378 | 0402 | 0.01uF | 25V7-K | top |
 | Capacitor | C379 | 0402 | 0.1uF | 16V7-K | top |
