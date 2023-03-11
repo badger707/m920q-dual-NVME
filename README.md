@@ -2,7 +2,7 @@
 
 ![Lenovo M920Q](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/20180508_lenovo_tiny.jpg)
 
-Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q Tiny by soldering missing SMD component to the board.
+Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q Tiny by soldering missing SMD components to the board.
 
 Models overview:
 
@@ -88,13 +88,72 @@ Note to self:
 12 components on the Right side of SATA port, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5878_x.png)
 
+Move resistor from R105 to R162. This will switch PCH to work in M920X mode:
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5883_x.png)
+
 * ### Component location - BOTTOM side of the board
 
 Only 4 capacitors at the side of NVME connector pads, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5885_x.png)
 
+## Soldering in progress
+
+Now that we know location of all components, its time to solder them, one by one...
+
+First we need to prep the pads -- clean all pads from factory solder using flux and desoldering braid...:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5888_.PNG)
+
+4 caps placed on NVME power rail (yeah, I know they're not perfectly soldered, dont care, works for me)<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5889_.PNG)
+
+Keep cleaning the pads, and keep going. 
+
+Now starting to solder components on the TOP side of the board, right side from SATA port:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5890_.PNG)
+
+Right side from SATA port is completed, all components soldered:
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5894_.PNG)
+
+
+Left side from SATA port is completed, all components are soldered. Yes I missed one cap and thats intentional -- I didnt wanted to take any risk and melt the SATA port, cap is just too close to it. So I skipped C377 and placed C379 to its place:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5896_.PNG)
+
+## SOLDERING COMPLETED
+Board view from the TOP:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/completed_view.jpeg)
+<br><br>
+## CHECKING BIOS
+
+Main view of my M920Q machine:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/bios_view_1.jpeg)
+
+Main > System Summary > Here you go -- 2 NVME drives:<BR>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/bios_view_2.jpeg)
+
+## BOOTING UBUNTU AND CHECKING IF ALL GOOD - OH YES IT IS!
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/nvme_list_and_lshw_.png)
+<br><br>
+## TROUBLESHOOTING
+
+If things didnt worked for you, here is what I'd check:
+* Machine does not post --> you created short circuit somewhere while soldering components, find & fix.
+* Machine does post but BIOS does not show "M.2 Drive 2" option --> move resistor R105 as per instructions.
+* Machine does post, "M.2 Drive 2" option is available, no drive model shown/recognised --> bad solder join in one of components, or, NVME edge connector is not soldered properly. Check & re-flow suspicious joins.
+<br><br><br>
+
+# FINAL NOTES
+
+As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
+Budget/cost - under 20EUR for all SMD components and edge connector.<br>
+This hardware mod is not difficult but requires proper tools and good experience with soldering.<br>
+I hope this will be usefull.<br><br>
+
+I do not provide professional services, however, feel free to reach out if you have any chalenges or questions related to this project.
+<br><br>
+
 ### Useful links:
-* [M.2 NVME edge connector, 5EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT420M01501?qs=doiCPypUmgHNRCMog9PEkQ%3D%3D)
+* [STH - Lenovo Thinkcentre/ThinkStation Tiny (Project TinyMiniMicro) Reference Thread](https://forums.servethehome.com/index.php?threads/lenovo-thinkcentre-thinkstation-tiny-project-tinyminimicro-reference-thread.34925/)
+* [M.2 NVME edge connector, 6EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT420M01501?qs=doiCPypUmgHNRCMog9PEkQ%3D%3D)
 * [M.2 NVME drive latch/clip, 0.42EUR, Aliexpress, item 1005004160639253](https://www.aliexpress.com/item/1005004160639253.html)
 * [M.2 Plastic Retention Clip Fastener for Lenovo, ebay.com, US based, 10USD](https://www.ebay.com/itm/224828071622)
-* [STH - Lenovo Thinkcentre/ThinkStation Tiny (Project TinyMiniMicro) Reference Thread](https://forums.servethehome.com/index.php?threads/lenovo-thinkcentre-thinkstation-tiny-project-tinyminimicro-reference-thread.34925/)
+
