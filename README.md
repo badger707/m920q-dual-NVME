@@ -130,8 +130,8 @@ Left side from SATA port is completed, all components are soldered. Yes I missed
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5896_.PNG)
 
 ## SOLDERING COMPLETED
-Board view from the TOP:<br>
-![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/completed_view.jpeg)
+Board view from the TOP, with marker of R150 location:<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/completed_view_.jpeg)
 <br><br>
 ## CHECKING BIOS
 
