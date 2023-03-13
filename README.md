@@ -59,13 +59,20 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Capacitor | C379 | 0402 | 0.1uF | 16V7-K | top |
 | Capacitor | C380 | 0603 | 10uF | 6.3V6-M | top |
 | Rezistor | R639 | 0402 | 0 ohm | - | top |
-| Rezistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |~~
+| Rezistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |
 | Rezistor | RC24 | 0402 | 10 Kohm | - | top |
-| M.2 NVME connector | - | - | - | - | bottom |
+| M.2 NVME connector | - | 3.2mm/4.2mm | - | - | bottom |
 | M.2 NVME latch | - | - | - | - | bottom |
 
+\
 Note to self:
 > RC27 appears to be not needed, its already on the board(?), however it is listed in slot #2 circuit.
+
+\
+Note on M.2 NVME edge connector:
+> I have used 4.2mm height connector (Gen5, expensive), however 3.2mm from Gen3/4 would be recommended (cheaper), see link bellow.
+
+<br>
 
 * ### Components list summary:
 | Type | Size | Value | Voltage | Count |
@@ -77,7 +84,7 @@ Note to self:
 | Rezistor | 0402 | 0 ohm | - | 8 |
 | Rezistor | 0402 | 10 Kohm | - | 2 |
 | Rezistor | 0402 | 33 ohm | - | 1 |
-| M.2 NVME connector | - | - | - | 1 |
+| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 |
 | M.2 NVME latch | - | - | - | 1 |
 
 * ### Components location - TOP side of the board
@@ -153,7 +160,8 @@ I do not provide professional services, however, feel free to reach out if you h
 
 ### Useful links:
 * [STH - Lenovo Thinkcentre/ThinkStation Tiny (Project TinyMiniMicro) Reference Thread](https://forums.servethehome.com/index.php?threads/lenovo-thinkcentre-thinkstation-tiny-project-tinyminimicro-reference-thread.34925/)
-* [M.2 NVME edge connector, 6EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT420M01501?qs=doiCPypUmgHNRCMog9PEkQ%3D%3D)
+* [M.2 NVME edge connector - I have ordered/used this one, M Key, H=4.2mm, 6EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT420M01501?qs=doiCPypUmgHNRCMog9PEkQ%3D%3D)
+ * [M.2 NVME edge connector -- better/cheaper option - M Key, H=3.2mm, 1.9EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D)
 * [M.2 NVME drive latch/clip, 0.42EUR, Aliexpress, item 1005004160639253](https://www.aliexpress.com/item/1005004160639253.html)
 * [M.2 Plastic Retention Clip Fastener for Lenovo, ebay.com, US based, 10USD](https://www.ebay.com/itm/224828071622)
 
