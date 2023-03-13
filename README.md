@@ -72,6 +72,10 @@ Note to self:
 Note on M.2 NVME edge connector:
 > I have used 4.2mm height connector (Gen5, expensive), however 3.2mm from Gen3/4 would be recommended (cheaper), see link bellow.
 
+\
+Note on components value tolerance:
+> Caps and resistors I have used are +/- 1% tolerance, 5% will work as well, I'd stay away from 10% (personal preference).
+
 <br>
 
 * ### Components list summary:
