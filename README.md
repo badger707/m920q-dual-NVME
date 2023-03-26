@@ -2,7 +2,7 @@
 
 ![Lenovo M920Q](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/20180508_lenovo_tiny.jpg)
 
-Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q Tiny by soldering missing SMD components to the board.
+Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q (and M720Q) Tiny by soldering missing SMD components to the board.
 
 Models overview:
 
@@ -10,8 +10,9 @@ Models overview:
 |-------|-----------------------|------------|-----------------------|-------------|----------------------|-----------------|----------------------|
 | M920Q | Coffee Lake (8/9x00T) | Intel Q370 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-LM (vPro) | 1x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
 | M920X | Coffee Lake (8/9x00T) | Intel Q370 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-LM (vPro) | 2x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
+M720Q | Coffee Lake (8/9x00T) | Intel B360 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-B360 | 1x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
 
-M920Q and M920X are using same board model.
+M920Q, M920X and M720Q are using same board model.
 <br><br>
 
 ## DISCLAIMER
@@ -21,8 +22,9 @@ USE AT YOUR OWN RISK. MICRO SOLDERING REQUIRED. I'M NOT RESPONSIBLE IF YOU WILL 
 
 Items on hand:
 * M920Q Tiny
-* tons of pictures of M920X board in high resolution, found on internet
+* tons of pictures of M920X board in high resolution, found on internet.
 * M920X Tiny schematics (circut diagrams)
+* M720Q pictures provided/shared by friendly user on Reddit
 
 In firs steps I started to visualy compare M920X board pictures to my M920Q, just to see how many missing components I will find.
 Most of (missing) components are located on top side of the board around SATA and Wi-Fi connectors area.
@@ -95,13 +97,19 @@ Note on components value tolerance:
 
 9 components on the Left side of SATA port, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5877_x.png)
-
+<br><br>
 12 components on the Right side of SATA port, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5878_x.png)
-
-Move resistor from R105 to R162. This will switch PCH to work in M920X mode:
+<br><br>
+<b>For M920Q</b> -- move resistor from R105 to R162. This will switch PCH to work in M920X mode:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5883_x.png)
-
+<br><br>
+<b>For M720Q</b> -- move resistor from R151 to R157. This will switch PCH to work in M920X mode:
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/m720q_pch_jump.jpeg)
+<br>
+Note on above M720Q picture components location:
+> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an Issue if this need further checks.
+<br><br>
 * ### Component location - BOTTOM side of the board
 
 Only 4 capacitors at the side of NVME connector pads, highlighted in green:<br>
@@ -155,6 +163,7 @@ If things didnt worked for you, here is what I'd check:
 # FINAL NOTES
 
 As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
+This mod should work for M720Q as well.
 Budget/cost - under 20EUR for all SMD components and edge connector.<br>
 This hardware mod is not difficult but requires proper tools and good experience with soldering.<br>
 I hope this will be usefull.<br><br>
