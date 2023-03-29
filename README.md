@@ -10,7 +10,7 @@ Models overview:
 |-------|-----------------------|------------|-----------------------|-------------|----------------------|-----------------|----------------------|
 | M920Q | Coffee Lake (8/9x00T) | Intel Q370 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-LM (vPro) | 1x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
 | M920X | Coffee Lake (8/9x00T) | Intel Q370 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-LM (vPro) | 2x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
-M720Q | Coffee Lake (8/9x00T) | Intel B360 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-B360 | 1x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
+M720Q | Coffee Lake (8/9x00T) | Intel B360 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-V | 1x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
 
 M920Q, M920X and M720Q are using same board model.
 <br><br>
@@ -33,7 +33,7 @@ Few components are on the bottom side of the board where NVME slot is located.
 Looking at schematics for 2nd NVME drive circuit - 16 capacitors and 11 resistors needs to be soldered on board, together with M.2 NVME connector.
 By comparing my visual findings with schematics and "board view", I was able to locate & identify all of them.
 
-* ### Components list
+* ### Components list for M920Q and M720Q
 | Type | Name | Size | Value | Voltage | Board Side |
 |-----------|--------|-------|--------|----------|---|
 | Capacitor | C363 | 0402 | 0.01uF | 25V7-K | bottom |
@@ -93,7 +93,10 @@ Note on components value tolerance:
 | M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 |
 | M.2 NVME latch | - | - | - | 1 |
 
-* ### Components location - TOP side of the board
+<br>
+<br>
+
+* ### Components location for M920Q and M720Q - TOP side of the board<br>
 
 9 components on the Left side of SATA port, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5877_x.png)
@@ -114,9 +117,12 @@ Note on above M720Q picture components location:
 
 Only 4 capacitors at the side of NVME connector pads, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5885_x.png)
+<br><br>
+## Soldering in progress<br>
 
-## Soldering in progress
-
+> <b>For M920Q</b> -- solder all components and move R105 resistor.<br>
+<b>For M720Q</b> -- solder all components and move R151 resistor.
+<br>
 Now that we know location of all components, its time to solder them, one by one...
 
 First we need to prep the pads -- clean all pads from factory solder using flux and desoldering braid...:<br>
@@ -163,7 +169,7 @@ If things didnt worked for you, here is what I'd check:
 # FINAL NOTES
 
 As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
-This mod should work for M720Q as well.
+This mod should work for M720Q as well.<br>
 Budget/cost - under 20EUR for all SMD components and edge connector.<br>
 This hardware mod is not difficult but requires proper tools and good experience with soldering.<br>
 I hope this will be usefull.<br><br>
