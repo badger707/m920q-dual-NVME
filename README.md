@@ -48,21 +48,21 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Capacitor | C372 | 0402 | 0.22uF | 16V7-K | top |
 | Capacitor | C373 | 0402 | 0.22uF | 16V7-K | top |
 | Capacitor | C374 | 0402 | 0.22uF | 16V7-K | top |
-| Rezistor | R1302 | 0402 | 0 ohm | - | top |
-| Rezistor | R1303 | 0402 | 0 ohm | - | top |
-| Rezistor | R631 | 0402 | 0 ohm | - | top |
-| Rezistor | R632 | 0402 | 0 ohm | - | top |
-| Rezistor | R633 | 0402 | 33 ohm | - | top |
-| Rezistor | R634 | 0402 | 0 ohm | - | top |
-| Rezistor | R635 | 0402 | 0 ohm | - | top |
-| Rezistor | R637 | 0402 | 0 ohm | - | top |
+| Resistor | R1302 | 0402 | 0 ohm | - | top |
+| Resistor | R1303 | 0402 | 0 ohm | - | top |
+| Resistor | R631 | 0402 | 0 ohm | - | top |
+| Resistor | R632 | 0402 | 0 ohm | - | top |
+| Resistor | R633 | 0402 | 33 ohm | - | top |
+| Resistor | R634 | 0402 | 0 ohm | - | top |
+| Resistor | R635 | 0402 | 0 ohm | - | top |
+| Resistor | R637 | 0402 | 0 ohm | - | top |
 | Capacitor | C377 | 0402 | 0.01uF | 25V7-K | top |
 | Capacitor | C378 | 0402 | 0.01uF | 25V7-K | top |
 | Capacitor | C379 | 0402 | 0.1uF | 16V7-K | top |
 | Capacitor | C380 | 0603 | 10uF | 6.3V6-M | top |
-| Rezistor | R639 | 0402 | 0 ohm | - | top |
-| Rezistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |
-| Rezistor | RC24 | 0402 | 10 Kohm | - | top |
+| Resistor | R639 | 0402 | 0 ohm | - | top |
+| Resistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |
+| Resistor | RC24 | 0402 | 10 Kohm | - | top |
 | M.2 NVME connector | - | 3.2mm/4.2mm | - | - | bottom |
 | M.2 NVME latch | - | - | - | - | bottom |
 
@@ -87,9 +87,9 @@ Note on components value tolerance:
 | Capacitor | 0402 | 0.1uF | 16V7-K | 2 | - |
 | Capacitor | 0402 | 0.22uF | 25V7-K | 8 | - |
 | Capacitor | 0603 | 10uF | 6.3V6-M | 2 | - |
-| Rezistor | 0402 | 0 ohm | - | 8 | - |
-| Rezistor | 0402 | 10 Kohm | - | 2 | - |
-| Rezistor | 0402 | 33 ohm | - | 1 | - |
+| Resistor | 0402 | 0 ohm | - | 8 | - |
+| Resistor | 0402 | 10 Kohm | - | 2 | - |
+| Resistor | 0402 | 33 ohm | - | 1 | - |
 | M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 | https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D |
 | M.2 NVME plastic retention clip | - | - | - | 1 | https://www.ebay.com/itm/224828071622 |
 
