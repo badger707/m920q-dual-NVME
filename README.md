@@ -90,8 +90,8 @@ Note on components value tolerance:
 | Rezistor | 0402 | 0 ohm | - | 8 | - |
 | Rezistor | 0402 | 10 Kohm | - | 2 | - |
 | Rezistor | 0402 | 33 ohm | - | 1 | - |
-| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 | - |
-| M.2 NVME latch | - | - | - | 1 | - |
+| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 | https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D |
+| M.2 NVME plastic retention clip | - | - | - | 1 | https://www.ebay.com/itm/224828071622 |
 
 <br>
 <br>
