@@ -81,17 +81,17 @@ Note on components value tolerance:
 <br>
 
 * ### Components list summary:
-| Type | Size | Value | Voltage | Count |
-|-----------|-------|--------|----------|---|
-| Capacitor | 0402 | 0.01uF | 25V7-K | 4 |
-| Capacitor | 0402 | 0.1uF | 16V7-K | 2 |
-| Capacitor | 0402 | 0.22uF | 25V7-K | 8 |
-| Capacitor | 0603 | 10uF | 6.3V6-M | 2 |
-| Rezistor | 0402 | 0 ohm | - | 8 |
-| Rezistor | 0402 | 10 Kohm | - | 2 |
-| Rezistor | 0402 | 33 ohm | - | 1 |
-| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 |
-| M.2 NVME latch | - | - | - | 1 |
+| Type | Size | Value | Voltage | Count | Link |
+|-----------|-------|--------|----------|---|------|
+| Capacitor | 0402 | 0.01uF | 25V7-K | 4 | - |
+| Capacitor | 0402 | 0.1uF | 16V7-K | 2 | - |
+| Capacitor | 0402 | 0.22uF | 25V7-K | 8 | - |
+| Capacitor | 0603 | 10uF | 6.3V6-M | 2 | - |
+| Rezistor | 0402 | 0 ohm | - | 8 | - |
+| Rezistor | 0402 | 10 Kohm | - | 2 | - |
+| Rezistor | 0402 | 33 ohm | - | 1 | - |
+| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 | - |
+| M.2 NVME latch | - | - | - | 1 | - |
 
 <br>
 <br>
