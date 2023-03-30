@@ -121,7 +121,7 @@ Only 5 capacitors at the side of NVME connector pads, highlighted in green:<br>
 <br><br>
 ## Soldering in progress<br>
 
-> <b>For M920Q</b> -- solder all components and move R105 resistor.<br>
+> <b>For M920Q</b> -- solder all components and move R150 resistor.<br>
 <b>For M720Q</b> -- solder all components and move R151 resistor.
 <br>
 Now that we know location of all components, its time to solder them, one by one...
