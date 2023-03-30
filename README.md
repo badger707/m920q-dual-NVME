@@ -16,7 +16,7 @@ M920Q, M920X and M720Q are using same board model.
 <br><br>
 
 ## DISCLAIMER
-USE AT YOUR OWN RISK. MICRO SOLDERING REQUIRED. I'M NOT RESPONSIBLE IF YOU WILL DAMAGE YOUR BOARD OR BURN DOWN YOUR HOUSE WITH THIS EXERCISE. IF YOU DONT KNOW WHAT YOU'RE DOING - DONT DO IT.
+USE AT YOUR OWN RISK. MICRO SOLDERING REQUIRED. I'M NOT RESPONSIBLE IF YOU WILL DAMAGE YOUR BOARD OR BURN DOWN YOUR HOUSE WITH THIS EXERCISE. IF YOU DONT KNOW WHAT YOU'RE DOING - DON'T DO IT.
 <br><br>
 ## FUN PART
 
@@ -26,11 +26,11 @@ Items on hand:
 * M920X Tiny schematics (circut diagrams)
 * M720Q pictures provided/shared by friendly user on Reddit
 
-In firs steps I started to visualy compare M920X board pictures to my M920Q, just to see how many missing components I will find.
+In first steps I started to visually compare M920X board pictures to my M920Q, just to see how many missing components I will find.
 Most of (missing) components are located on top side of the board around SATA and Wi-Fi connectors area.
 Few components are on the bottom side of the board where NVME slot is located.
 
-Looking at schematics for 2nd NVME drive circuit - 16 capacitors and 11 resistors needs to be soldered on board, together with M.2 NVME connector.
+Looking at the schematics for the 2nd NVME drive circuit - 16 capacitors and 11 resistors needs to be soldered on board, together with M.2 NVME connector.
 By comparing my visual findings with schematics and "board view", I was able to locate & identify all of them.
 
 * ### Components list for M920Q and M720Q
@@ -104,19 +104,20 @@ Note on components value tolerance:
 12 components on the Right side of SATA port, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5878_x.png)
 <br><br>
-<b>For M920Q</b> -- move resistor from R105 to R162. This will switch PCH to work in M920X mode:
+<b>For M920Q</b> -- move resistor from R150 to R162. This will switch PCH to work in M920X mode:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5883_x.png)
 <br><br>
-<b>For M720Q</b> -- move resistor from R151 to R157. This will switch PCH to work in M920X mode:
+<b>For M720Q</b> -- move resistor from R151 to R157. <i>Note that an <b>NEC</b> B360 chipset may require R152 moved to R159 instead.</i> This will switch PCH to work in M920X mode:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/m720q_pch_jump.jpeg)
 <br>
 Note on above M720Q picture components location:
-> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an Issue if this need further checks.
+> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an issue if this need further checks.
 <br><br>
 * ### Component location - BOTTOM side of the board
 
-Only 4 capacitors at the side of NVME connector pads, highlighted in green:<br>
+Only 5 capacitors at the side of NVME connector pads, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5885_x.png)
+<b><i>RC26 located where "57" is written may also be required for the m.2 PEDET pin - Resistor 10K 0402 5%</i></b>
 <br><br>
 ## Soldering in progress<br>
 
@@ -140,7 +141,8 @@ Right side from SATA port is completed, all components soldered:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5894_.PNG)
 
 
-Left side from SATA port is completed, all components are soldered. Yes I missed one cap and thats intentional -- I didnt wanted to take any risk and melt the SATA port, cap is just too close to it. So I skipped C377 and placed C379 to its place:<br>
+Left side from SATA port is completed, all components are soldered. Yes I missed one cap and thats intentional -- I didnt wanted to take any risk and melt the SATA port, cap is just too close to it. So I skipped C379 and placed C377 to its place:<br>
+<b>Note numbering on picture is incorrect - capacitors are labelled going downwards as follows: C378, C377, 379</b>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5896_.PNG)
 
 ## SOLDERING COMPLETED
@@ -162,7 +164,7 @@ Main > System Summary > Here you go -- 2 NVME drives:<BR>
 
 If things didnt worked for you, here is what I'd check:
 * Machine does not post --> you created short circuit somewhere while soldering components, find & fix.
-* Machine does post but BIOS does not show "M.2 Drive 2" option --> move resistor R105 as per instructions.
+* Machine does post but BIOS does not show "M.2 Drive 2" option --> move resistor R150 as per instructions.
 * Machine does post, "M.2 Drive 2" option is available, no drive model shown/recognised --> bad solder join in one of components, or, NVME edge connector is not soldered properly. Check & re-flow suspicious joins.
 <br><br><br>
 
