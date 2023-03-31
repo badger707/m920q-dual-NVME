@@ -166,6 +166,17 @@ If things didnt worked for you, here is what I'd check:
 * Machine does post, "M.2 Drive 2" option is available, no drive model shown/recognised --> bad solder join in one of components, or, NVME edge connector is not soldered properly. Check & re-flow suspicious joins.
 <br><br><br>
 
+## PCIe x8 bifurcation mod to 2x4
+><b>It looks like this might work, placeholder, WIP.</b><br>
+Looking at components soldered on the board, I see it is in CFG[6:5]:1:0" configuration, which is "10 = 2 x8 PCI Express" mode.
+This makes sense, we have lines 0-7 in slot available. So we need "CFG[6:5]:0:0" configuration which will give "00 = 1 x8, 2 x4 PCI Express" mode.<br>
+After that, need to reverse lines (0-7 --> 7-0) with CFG[2]:0 configuration which should give two x4 lanes...<br>
+If this will work, we can stick Supermicro AOC-SLG3-2M2 or something similar to it. Need some testing over the weekend.<br><br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/bifurcation_table1.jpeg)<br>
+![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/bifurcation_map2.jpeg)
+
+<br><br>
+
 # FINAL NOTES
 
 As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
