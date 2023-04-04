@@ -166,11 +166,6 @@ If things didnt worked for you, here is what I'd check:
 * Machine does post, "M.2 Drive 2" option is available, no drive model shown/recognised --> bad solder join in one of components, or, NVME edge connector is not soldered properly. Check & re-flow suspicious joins.
 <br><br><br>
 
-## PCIe x8 bifurcation mod to x4x4
-> moved [here](https://github.com/badger707/m920q-pcie-bifurcation) to avoid confusion.
-
-<br><br>
-
 # FINAL NOTES
 
 As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
