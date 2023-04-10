@@ -16,7 +16,7 @@ M920Q, M920X and M720Q are using same board model.
 <br><br>
 
 ## DISCLAIMER
-USE AT YOUR OWN RISK. MICRO SOLDERING REQUIRED. I'M NOT RESPONSIBLE IF YOU WILL DAMAGE YOUR BOARD OR BURN DOWN YOUR HOUSE WITH THIS EXERCISE. IF YOU DONT KNOW WHAT YOU'RE DOING - DONT DO IT.
+USE AT YOUR OWN RISK. MICRO SOLDERING REQUIRED. I'M NOT RESPONSIBLE IF YOU WILL DAMAGE YOUR BOARD OR BURN DOWN YOUR HOUSE WITH THIS EXERCISE. IF YOU DONT KNOW WHAT YOU'RE DOING - DON'T DO IT.
 <br><br>
 ## FUN PART
 
@@ -26,11 +26,11 @@ Items on hand:
 * M920X Tiny schematics (circut diagrams)
 * M720Q pictures provided/shared by friendly user on Reddit
 
-In firs steps I started to visualy compare M920X board pictures to my M920Q, just to see how many missing components I will find.
+In firs steps I started to visually compare M920X board pictures to my M920Q, just to see how many missing components I will find.
 Most of (missing) components are located on top side of the board around SATA and Wi-Fi connectors area.
 Few components are on the bottom side of the board where NVME slot is located.
 
-Looking at schematics for 2nd NVME drive circuit - 16 capacitors and 11 resistors needs to be soldered on board, together with M.2 NVME connector.
+Looking at the schematics for the 2nd NVME drive circuit - 16 capacitors and 11 resistors needs to be soldered on board, together with M.2 NVME connector.
 By comparing my visual findings with schematics and "board view", I was able to locate & identify all of them.
 
 * ### Components list for M920Q and M720Q
@@ -48,23 +48,23 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Capacitor | C372 | 0402 | 0.22uF | 16V7-K | top |
 | Capacitor | C373 | 0402 | 0.22uF | 16V7-K | top |
 | Capacitor | C374 | 0402 | 0.22uF | 16V7-K | top |
-| Rezistor | R1302 | 0402 | 0 ohm | - | top |
-| Rezistor | R1303 | 0402 | 0 ohm | - | top |
-| Rezistor | R631 | 0402 | 0 ohm | - | top |
-| Rezistor | R632 | 0402 | 0 ohm | - | top |
-| Rezistor | R633 | 0402 | 33 ohm | - | top |
-| Rezistor | R634 | 0402 | 0 ohm | - | top |
-| Rezistor | R635 | 0402 | 0 ohm | - | top |
-| Rezistor | R637 | 0402 | 0 ohm | - | top |
+| Resistor | R1302 | 0402 | 0 ohm | - | top |
+| Resistor | R1303 | 0402 | 0 ohm | - | top |
+| Resistor | R631 | 0402 | 0 ohm | - | top |
+| Resistor | R632 | 0402 | 0 ohm | - | top |
+| Resistor | R633 | 0402 | 33 ohm | - | top |
+| Resistor | R634 | 0402 | 0 ohm | - | top |
+| Resistor | R635 | 0402 | 0 ohm | - | top |
+| Resistor | R637 | 0402 | 0 ohm | - | top |
 | Capacitor | C377 | 0402 | 0.01uF | 25V7-K | top |
 | Capacitor | C378 | 0402 | 0.01uF | 25V7-K | top |
 | Capacitor | C379 | 0402 | 0.1uF | 16V7-K | top |
 | Capacitor | C380 | 0603 | 10uF | 6.3V6-M | top |
-| Rezistor | R639 | 0402 | 0 ohm | - | top |
-| Rezistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |
-| Rezistor | RC24 | 0402 | 10 Kohm | - | top |
+| Resistor | R639 | 0402 | 0 ohm | - | top |
+| Resistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |
+| Resistor | RC24 | 0402 | 10 Kohm | - | top |
 | M.2 NVME connector | - | 3.2mm/4.2mm | - | - | bottom |
-| M.2 NVME latch | - | - | - | - | bottom |
+| M.2 NVME plastic retention clip | - | - | - | - | bottom |
 
 \
 Note to self:
@@ -87,11 +87,11 @@ Note on components value tolerance:
 | Capacitor | 0402 | 0.1uF | 16V7-K | 2 |
 | Capacitor | 0402 | 0.22uF | 25V7-K | 8 |
 | Capacitor | 0603 | 10uF | 6.3V6-M | 2 |
-| Rezistor | 0402 | 0 ohm | - | 8 |
-| Rezistor | 0402 | 10 Kohm | - | 2 |
-| Rezistor | 0402 | 33 ohm | - | 1 |
+| Resistor | 0402 | 0 ohm | - | 8 |
+| Resistor | 0402 | 10 Kohm | - | 2 |
+| Resistor | 0402 | 33 ohm | - | 1 |
 | M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 |
-| M.2 NVME latch | - | - | - | 1 |
+| M.2 NVME plastic retention clip | - | - | - | 1 |
 
 <br>
 <br>
@@ -104,14 +104,14 @@ Note on components value tolerance:
 12 components on the Right side of SATA port, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5878_x.png)
 <br><br>
-<b>For M920Q</b> -- move resistor from R105 to R162. This will switch PCH to work in M920X mode:
+<b>For M920Q</b> -- move resistor from R150 to R162. This will switch PCH to work in M920X mode:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5883_x.png)
 <br><br>
 <b>For M720Q</b> -- move resistor from R151 to R157. This will switch PCH to work in M920X mode:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/m720q_pch_jump.jpeg)
 <br>
 Note on above M720Q picture components location:
-> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an Issue if this need further checks.
+> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an issue if this need further checks.
 <br><br>
 * ### Component location - BOTTOM side of the board
 
@@ -120,7 +120,7 @@ Only 4 capacitors at the side of NVME connector pads, highlighted in green:<br>
 <br><br>
 ## Soldering in progress<br>
 
-> <b>For M920Q</b> -- solder all components and move R105 resistor.<br>
+> <b>For M920Q</b> -- solder all components and move R150 resistor.<br>
 <b>For M720Q</b> -- solder all components and move R151 resistor.
 <br>
 Now that we know location of all components, its time to solder them, one by one...
@@ -162,7 +162,7 @@ Main > System Summary > Here you go -- 2 NVME drives:<BR>
 
 If things didnt worked for you, here is what I'd check:
 * Machine does not post --> you created short circuit somewhere while soldering components, find & fix.
-* Machine does post but BIOS does not show "M.2 Drive 2" option --> move resistor R105 as per instructions.
+* Machine does post but BIOS does not show "M.2 Drive 2" option --> move resistor R150 (or R151 for M720q) as per instructions.
 * Machine does post, "M.2 Drive 2" option is available, no drive model shown/recognised --> bad solder join in one of components, or, NVME edge connector is not soldered properly. Check & re-flow suspicious joins.
 <br><br><br>
 
@@ -181,6 +181,6 @@ I do not provide professional services, however, feel free to reach out if you h
 * [STH - Lenovo Thinkcentre/ThinkStation Tiny (Project TinyMiniMicro) Reference Thread](https://forums.servethehome.com/index.php?threads/lenovo-thinkcentre-thinkstation-tiny-project-tinyminimicro-reference-thread.34925/)
 * [M.2 NVME edge connector - I have ordered/used this one, M Key, H=4.2mm, 6EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT420M01501?qs=doiCPypUmgHNRCMog9PEkQ%3D%3D)
  * [M.2 NVME edge connector -- better/cheaper option - M Key, H=3.2mm, 1.9EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D)
-* [M.2 NVME drive latch/clip, 0.42EUR, Aliexpress, item 1005004160639253](https://www.aliexpress.com/item/1005004160639253.html)
+* [M.2 NVME drive retention clip, 0.42EUR, Aliexpress, item 1005004160639253](https://www.aliexpress.com/item/1005004160639253.html) Update: not ideal, 6mm is too tall. Drive gets fixed by slight angle - 6mm above the board at the clip side, and 4mm at the connector side. Either need to cut down the retention clip to 4mm or look for better alternative.
 * [M.2 Plastic Retention Clip Fastener for Lenovo, ebay.com, US based, 10USD](https://www.ebay.com/itm/224828071622)
 
