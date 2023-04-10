@@ -183,4 +183,4 @@ I do not provide professional services, however, feel free to reach out if you h
  * [M.2 NVME edge connector -- better/cheaper option - M Key, H=3.2mm, 1.9EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D)
 * [M.2 NVME drive retention clip, 0.42EUR, Aliexpress, item 1005004160639253](https://www.aliexpress.com/item/1005004160639253.html) Update: not ideal, 6mm is too tall. Drive gets fixed by slight angle - 6mm above the board at the clip side, and 4mm at the connector side. Either need to cut down the retention clip to 4mm or look for better alternative.
 * [M.2 Plastic Retention Clip Fastener for Lenovo, ebay.com, US based, 10USD](https://www.ebay.com/itm/224828071622)
-
+* [Lot of 5pc Lenovo Thinkcentre M.2 SSD Kit Tray Anchor Tool PN. 4XF0P01011, ebay.com, 20USD](https://www.ebay.com/itm/403581452094) Note:  1 kit includes 2 red retention clips, so with lot of 5 you'd get 10 clips in total, thats ~2USD per one clip.
