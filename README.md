@@ -2,7 +2,7 @@
 
 ![Lenovo M920Q](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/20180508_lenovo_tiny.jpg)
 
-Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q (and M720Q) Tiny by soldering missing SMD components to the board.
+Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q and 1 SSD SATA drive to M720Q Tiny by soldering missing SMD components to the board.
 
 Models overview:
 
@@ -110,8 +110,7 @@ Note on components value tolerance:
 <b>For M720Q</b> -- move resistor from R151 to R157. This will switch PCH to work in M920X mode:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/m720q_pch_jump.jpeg)
 <br>
-Note on above M720Q picture components location:
-> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an issue if this need further checks.
+Please note that on M720q only one NVMe slot and one SATA slot are available, so the additional connector will only work with SATA ssd.
 <br><br>
 * ### Component location - BOTTOM side of the board
 
@@ -169,7 +168,7 @@ If things didnt worked for you, here is what I'd check:
 # FINAL NOTES
 
 As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
-This mod should work for M720Q as well.<br>
+This mod works also for M720Q, but you can only use a SATA SSD.<br>
 Budget/cost - under 20EUR for all SMD components and edge connector.<br>
 This hardware mod is not difficult but requires proper tools and good experience with soldering.<br>
 I hope this will be usefull.<br><br>
