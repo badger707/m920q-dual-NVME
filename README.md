@@ -2,7 +2,7 @@
 
 ![Lenovo M920Q](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/20180508_lenovo_tiny.jpg)
 
-Goal of this personal project is to add 2nd NVME drive to Lenovo M920Q (and M720Q) Tiny by soldering missing SMD components to the board.
+Goal of this personal project is to add 2nd M.2 NVME drive to Lenovo M920Q (M.2 SATA for M720Q) Tiny by soldering missing SMD components to the board.
 
 Models overview:
 
@@ -13,6 +13,11 @@ Models overview:
 M720Q | Coffee Lake (8/9x00T) | Intel B360 | 2 x 32GB 2666MHz DDR4 | PCIe 3.0 x8 | Intel l219-V | 1x M.2, 1x 2.5" | IQ3XOIL Q370 NM-B551 |
 
 M920Q, M920X and M720Q are using same board model.
+<br><br>
+
+## TLDR
+M920q -- one M.2 NVME drive in original (white) slot, and one M.2 NVME drive in soldered slot. <br>
+M720q -- one M.2 NVME drive in original (white) slot, and one M.2 SATA drive in soldered slot.
 <br><br>
 
 ## DISCLAIMER
@@ -61,37 +66,28 @@ By comparing my visual findings with schematics and "board view", I was able to 
 | Capacitor | C379 | 0402 | 0.1uF | 16V7-K | top |
 | Capacitor | C380 | 0603 | 10uF | 6.3V6-M | top |
 | Resistor | R639 | 0402 | 0 ohm | - | top |
-| Resistor | RC27 | ~~0402~~ | ~~10 Kohm~~ | - | bottom |
 | Resistor | RC24 | 0402 | 10 Kohm | - | top |
 | M.2 NVME connector | - | 3.2mm/4.2mm | - | - | bottom |
 | M.2 NVME plastic retention clip | - | - | - | - | bottom |
 
 \
-Note to self:
-> RC27 appears to be not needed, its already on the board(?), however it is listed in slot #2 circuit.
-
-\
 Note on M.2 NVME edge connector:
 > I have used 4.2mm height connector (Gen5, expensive), however 3.2mm from Gen3/4 would be recommended (cheaper), see link bellow.
-
-\
-Note on components value tolerance:
-> Caps and resistors I have used are +/- 1% tolerance, 5% will work as well, I'd stay away from 10% (personal preference).
 
 <br>
 
 * ### Components list summary:
-| Type | Size | Value | Voltage | Count |
-|-----------|-------|--------|----------|---|
-| Capacitor | 0402 | 0.01uF | 25V7-K | 4 |
-| Capacitor | 0402 | 0.1uF | 16V7-K | 2 |
-| Capacitor | 0402 | 0.22uF | 25V7-K | 8 |
-| Capacitor | 0603 | 10uF | 6.3V6-M | 2 |
-| Resistor | 0402 | 0 ohm | - | 8 |
-| Resistor | 0402 | 10 Kohm | - | 2 |
-| Resistor | 0402 | 33 ohm | - | 1 |
-| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 |
-| M.2 NVME plastic retention clip | - | - | - | 1 |
+| Type | Size | Value | Voltage | Count | Mouser links |
+|-----------|-------|--------|----------|---|------|
+| Capacitor | 0402 | 0.01uF | 25V7-K | 4 | ![581-04023D103KAT2A](https://www.mouser.ie/ProductDetail/581-04023D103KAT2A)|
+| Capacitor | 0402 | 0.1uF | 16V7-K | 2 | ![581-0402YD104K](https://www.mouser.ie/ProductDetail/581-0402YD104K)|
+| Capacitor | 0402 | 0.22uF | 25V7-K | 8 | ![581-0402YC224KAT2A](https://www.mouser.ie/ProductDetail/581-0402YC224KAT2A)|
+| Capacitor | 0603 | 10uF | 6.3V6-M | 2 | ![810-C1608X5R0J106K ](https://www.mouser.ie/ProductDetail/810-C1608X5R0J106K)|
+| Resistor | 0402 | 0 ohm | - | 8 | ![603-RC0402FR-070RL](https://www.mouser.ie/ProductDetail/603-RC0402FR-070RL)|
+| Resistor | 0402 | 10 Kohm | - | 2 | ![71-RCC040210K0FKED](https://www.mouser.ie/ProductDetail/71-RCC040210K0FKED)|
+| Resistor | 0402 | 33 ohm | - | 1 | ![71-CRCW040233R0FKEDC](https://www.mouser.ie/ProductDetail/71-CRCW040233R0FKEDC)|
+| M.2 NVME connector | 3.2mm/4.2mm | - | - | 1 | see useful link section |
+| M.2 NVME plastic retention clip | - | - | - | 1 | see useful links section |
 
 <br>
 <br>
@@ -111,13 +107,17 @@ Note on components value tolerance:
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/m720q_pch_jump.jpeg)
 <br>
 Note on above M720Q picture components location:
-> I can not confirm this will work 100%, I have no M720Q on hands to do real test, however, looking at pictures provided by Redditor and comparing it with M920X schematics -- this should work just fine. Create an issue if this need further checks.
+> According to this ![post](https://github.com/badger707/m920q-dual-NVME/issues/4#issuecomment-1706272665) soldered M.2 slot will work with M.2 SATA drive only.
+
 <br><br>
 * ### Component location - BOTTOM side of the board
 
 Only 4 capacitors at the side of NVME connector pads, highlighted in green:<br>
 ![](https://github.com/badger707/m920q-dual-NVME/blob/main/pictures/IMG_5885_x.png)
-<br><br>
+<br>
+> Ignore RC27 highlighting in above picture.<br>
+
+<br>
 ## Soldering in progress<br>
 
 > <b>For M920Q</b> -- solder all components and move R150 resistor.<br>
@@ -168,8 +168,8 @@ If things didnt worked for you, here is what I'd check:
 
 # FINAL NOTES
 
-As you can see, we can convert M920Q and add second NVME drive, this is exastly same as M920X.<br>
-This mod should work for M720Q as well.<br>
+As you can see, we can convert m920Q and add second M.2 NVME drive, this is exactly same as m920X.<br>
+For m720Q -- according to this ![post](https://github.com/badger707/m920q-dual-NVME/issues/4#issuecomment-1706272665) soldered M.2 slot will work with M.2 SATA drive only.<br>
 Budget/cost - under 20EUR for all SMD components and edge connector.<br>
 This hardware mod is not difficult but requires proper tools and good experience with soldering.<br>
 I hope this will be usefull.<br><br>
@@ -180,7 +180,6 @@ I do not provide professional services, however, feel free to reach out if you h
 ### Useful links:
 * [STH - Lenovo Thinkcentre/ThinkStation Tiny (Project TinyMiniMicro) Reference Thread](https://forums.servethehome.com/index.php?threads/lenovo-thinkcentre-thinkstation-tiny-project-tinyminimicro-reference-thread.34925/)
 * [M.2 NVME edge connector - I have ordered/used this one, M Key, H=4.2mm, 6EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT420M01501?qs=doiCPypUmgHNRCMog9PEkQ%3D%3D)
- * [M.2 NVME edge connector -- better/cheaper option - M Key, H=3.2mm, 1.9EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D)
-* [M.2 NVME drive retention clip, 0.42EUR, Aliexpress, item 1005004160639253](https://www.aliexpress.com/item/1005004160639253.html) Update: not ideal, 6mm is too tall. Drive gets fixed by slight angle - 6mm above the board at the clip side, and 4mm at the connector side. Either need to cut down the retention clip to 4mm or look for better alternative.
+* [M.2 NVME edge connector -- better/cheaper option - M Key, H=3.2mm, 1.9EUR, Mouser](https://www.mouser.ie/ProductDetail/Amphenol-FCI/MDT320M03001?qs=L0rBtNYaw0mrZfzBsyqFRg%3D%3D)
 * [M.2 Plastic Retention Clip Fastener for Lenovo, ebay.com, US based, 10USD](https://www.ebay.com/itm/224828071622)
 * [Lot of 5pc Lenovo Thinkcentre M.2 SSD Kit Tray Anchor Tool PN. 4XF0P01011, ebay.com, 20USD](https://www.ebay.com/itm/403581452094) Note:  1 kit includes 2 red retention clips, so with lot of 5 you'd get 10 clips in total, thats ~2USD per one clip.
