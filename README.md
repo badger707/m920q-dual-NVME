@@ -17,7 +17,7 @@ M920Q, M920X and M720Q are using same board model.
 
 ## TLDR
 M920q -- one M.2 NVME drive in original (white) slot, and one M.2 NVME drive in soldered slot. <br>
-M720q -- one M.2 NVME drive in original (white) slot, and one M.2 SATA drive in soldered slot.
+M720q -- one M.2 NVME drive in original (white) slot, and one M.2 SATA drive in soldered slot ![confirmed](https://github.com/badger707/m920q-dual-NVME/issues/4#issuecomment-1706374243).
 <br><br>
 
 ## DISCLAIMER
